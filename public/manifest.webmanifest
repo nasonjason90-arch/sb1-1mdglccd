@@ -1,0 +1,20 @@
+{
+  "name": "ZambiaHomes",
+  "short_name": "ZambiaHomes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f766e",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAQAAAB2q3mXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAN0lEQVR42u3BMQEAAAwCoNm/9FhQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgJwF0m5q0AAE6b0q0AAAAASUVORK5CYII=",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAAIECAYAAACGm9bTAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAN0lEQVR42u3BMQEAAAwCoNm/9FhQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgJwF0m5q0AAE6b0q0AAAAASUVORK5CYII=",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
