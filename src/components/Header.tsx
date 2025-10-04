@@ -72,18 +72,6 @@ export default function Header() {
                     Add Property
                   </Link>
                 )}
-                {user.role === 'admin' && (
-                  <Link
-                    to="/admin"
-                    className={`text-sm font-medium transition-colors ${
-                      isActive('/admin')
-                        ? 'text-green-600 border-b-2 border-green-600 pb-1'
-                        : 'text-gray-700 hover:text-green-600'
-                    }`}
-                  >
-                    Admin
-                  </Link>
-                )}
               </>
             )}
           </nav>
@@ -126,12 +114,6 @@ export default function Header() {
                   className="bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-green-700 transition-colors"
                 >
                   Get Started
-                </Link>
-                <Link
-                  to="/admin-login"
-                  className="text-sm font-medium text-gray-700 hover:text-green-600 transition-colors"
-                >
-                  Admin
                 </Link>
               </div>
             )}
