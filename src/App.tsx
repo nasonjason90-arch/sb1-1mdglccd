@@ -22,7 +22,7 @@ import Cookies from './pages/static/Cookies';
 import ResetPassword from './pages/ResetPassword';
 import Footer from './components/Footer';
 
-function ProtectedRoute({ children, requiredRole }: { children: ReactNode; requiredRole?: string }) {
+function ProtectedRoute({ children, requiredRole, loginPath = '/login' }: { children: ReactNode; requiredRole?: string; loginPath?: string }) {
   const { user, userRole, loading } = useAuth();
 
   if (loading) {
@@ -34,7 +34,7 @@ function ProtectedRoute({ children, requiredRole }: { children: ReactNode; requi
   }
 
   if (!user) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to={loginPath} replace />;
   }
 
   if (requiredRole && userRole !== requiredRole) {
@@ -91,7 +91,7 @@ function AppContent() {
             <Route
               path="/admin"
               element={
-                <ProtectedRoute requiredRole="admin">
+                <ProtectedRoute requiredRole="admin" loginPath="/admin-login">
                   <AdminDashboard />
                 </ProtectedRoute>
               }
