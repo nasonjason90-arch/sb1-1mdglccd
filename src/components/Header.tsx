@@ -115,12 +115,6 @@ export default function Header() {
                 >
                   Get Started
                 </Link>
-                <Link
-                  to="/admin-login"
-                  className="text-sm font-medium text-gray-700 hover:text-green-600 transition-colors"
-                >
-                  Admin
-                </Link>
               </div>
             )}
           </div>
@@ -209,13 +203,6 @@ export default function Header() {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Get Started
-                  </Link>
-                  <Link
-                    to="/admin-login"
-                    className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Admin
                   </Link>
                 </>
               )}
